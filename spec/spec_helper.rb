@@ -11,10 +11,10 @@ RSpec.configure do |config|
 end
 
 # Define the application we're testing
-#def app
+def app
   # Load the application defined in config.ru
-#  Rack::Builder.parse_file('config.ru').first
-#end
+  Rack::Builder.parse_file('config.ru').first
+end
 
 # Configure Capybara to test against the application above.
 Capybara.app = app
